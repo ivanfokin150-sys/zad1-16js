@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ivan Fokin 3F</title>
+</head>
+<body>
+<script>
+var A = parseInt(prompt("A="));
+var B = parseInt(prompt("B="));
+var wynik = (A + B) ** 3;
+var linia = "(" + A + " + " + B + ")^3 = " + A + "^3 + 3*((" + A + ")^2)*(" + B + ") + 3*(" + A + ")*((" + B + ")^2) + " + B + "^3 = " + A**3 + " + " + 3*A**2*B + " + " + 3*A*B**2 + " + " + B**3 + " = " + wynik;
+{
+document.write("<div style='color: navy;'>wczytane liczby: A=" + A + " &nbsp; B=" + B + "</div>"+"<br>");
+document.write("<div style='color: navy; width: 100%; white-space: nowrap; font-size: " + (window.innerWidth / linia.length * 1.7) + "px;'>" + linia + "</div>"+"<br>"+"<br>");
+}
+function okno_zamknij() 
+                 { 
+                   window.close() 
+                 }
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
