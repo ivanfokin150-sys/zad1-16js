@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ivan Fokin 3F</title>
+</head>
+<body>
+<script>
+let m_fok = parseInt(prompt("m="));
+
+if (Number.isInteger(m_fok) && m_fok > 0) {
+    document.write("1/" + m_fok + " = 1/" + (m_fok + 2) + " + 1/" + ((m_fok + 1) * (m_fok + 2)) + " + 1/" + (m_fok * (m_fok + 1))+"<br>"+"<br>");
+} else {
+    document.write("ERROR! Podaj liczbę naturalną większą od 0");
+}
+function okno_zamknij() 
+                 { 
+                   window.close() 
+                 }
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
