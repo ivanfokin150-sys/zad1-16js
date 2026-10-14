@@ -1,17 +1,24 @@
 <!DOCTYPE html>
+<html lang="pl">
 <head>
-<title> Proste obliczenia</title>
-<meta-charset="utf-8">
+<meta charset="UTF-8">
+<title>Ivan Fokin 3F</title>
 </head>
 <body>
-<div style="color:red; font-size:100px;">
-<script language="JavaScript">
-var liczba1=prompt("Podaj mianownik m=" ,");
-var m_fok=parseFloat(liczba1);
-document.write("1/"+m_fok+"=");
-document.write("1/"(1+m_fok)+"+");
-document.write("1/"+(m_fok*(1+m_fok))+"<br>");
+<script>
+let m_fok = prompt("m=");
+m_fok = parseInt(m_fok);
+
+if (m_fok > 0) {
+    document.write("1/" + m_fok + " = 1/" + (m_fok + 1) + " + 1/" + (m_fok * (m_fok + 1))+"<br>"+"<br>");
+} else {
+    document.write("ERROR! Podaj liczbę naturalną większą od 0");
+}
+function okno_zamknij() 
+                 { 
+                   window.close() 
+                 }
 </script>
-</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
 </body>
 </html>
